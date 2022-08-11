@@ -23,7 +23,7 @@ import warnings
 from urllib.parse import urlparse
 
 np.random.seed(0)
-data = pd.read_csv("C:/Users/uthar/JUPYTER/REFLECTIONS/FETAL/fetal_health.csv")
+data = pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fetal_health.csv"))
 #data.head()
 
 X=data.drop(["fetal_health"],axis=1)
