@@ -40,7 +40,7 @@ X_train, X_test, y_train,y_test = train_test_split(X_df,y,test_size=0.3,random_s
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
-    mlflow.set_tracking_uri("http://localhost:8001")
+    mlflow.set_tracking_uri("http://localhost:8000")
     
 n_estimator=int(sys.argv[1])
 max_depth=int(sys.argv[2])     
