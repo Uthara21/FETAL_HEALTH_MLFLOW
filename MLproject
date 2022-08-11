@@ -5,5 +5,6 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      max_leaf_nodes: int
-    command: "python main.py {max_leaf_nodes}"
+      n_estimators: int
+      max_depth:    int
+    command: "python fetal_health.py {n_estimators} {max_depth}"
